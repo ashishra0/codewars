@@ -1,6 +1,6 @@
 # Codewars Kata
 
-## 7kyu
+## 7 kyu
 
 * Descending Order
 * Disemvowel Trolls
@@ -16,5 +16,11 @@
 * Square every digit
 * vowel count
 * Sum of lowest positive integers
+
+## 6 kyu
+
+* Counting Duplicates
+* Stop gninnipS My sdroW!
+* Who likes it?
 
 > soon more to follow..
