@@ -10,6 +10,22 @@ class VendingMachine
     @machine_money = machine_money
   end
 
+  def vend(code, money)
+    if @items.any?{|item| item.has_value?(code)}
+      if money < selected_item(code)[:price] and item_stock(code)>0
+        puts "Not enough money!"
+      else
+        puts "vending #{item_name(code)} with #{change(code, money)} change." and item_stock(code)
+      end
+        puts "#{item_name(code)}: Out of stock!" if item_stock(code)==0
+        new_stock(code)
+    else
+       puts "Invalid selection! : Money in vending machine = #{@machine_money}"
+    end
+  end
+
+  private
+
   def selected_item(code)
     @items.detect { |item| item[:code]==code}
   end
@@ -29,21 +45,7 @@ class VendingMachine
   def new_stock(code)
     selected_item(code)[:quantity]+=1
   end
-
-  def vend(code, money)
-    if @items.any?{|item| item.has_value?(code)}
-      if money < selected_item(code)[:price] and item_stock(code)>0
-        puts "Not enough money!"
-      else
-        puts "vending #{item_name(code)} with #{change(code, money)} change." and item_stock(code)
-      end
-        puts "#{item_name(code)}: Out of stock!" if item_stock(code)==0
-        new_stock(code)
-    else
-       puts "Invalid selection! : Money in vending machine = #{@machine_money}"
-    end
-  end
 end
 
 obj = VendingMachine.new(@items, 11.20)
-ap obj.vend("A04", 0.10)
+ap obj.vend("A04", 10.10)
