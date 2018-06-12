@@ -2,13 +2,6 @@
 # Problem statement: square every digit of a number
 # For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
 
-# initial solution
-def square_digits num
-    number = num.to_s.split("")
-    number.map! {|i| i.to_i * i.to_i}
-    number.join("").to_i
-  end
-
 # optimized solution
 def square_digits num
     # code goes here
