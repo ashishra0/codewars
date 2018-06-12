@@ -3,18 +3,28 @@
 
 # example: f(n=100) -->returns 5050
 
-
-def add(num)
-    if(num.class == Fixnum and num > 0)
-        sum  = (1..num).to_a.inject(:+)
-        return sum
+require 'minitest/autorun'
+class Gauss
+  def add(num)
+    if(num.class == Integer and num > 0)
+      sum  = (1..num).to_a.inject(:+)
+      return sum
     else
-        return false
+      return false
     end
+  end
 end
 
-# test cases
-add(100)
-add(-11)
-add(1.34)
-add(200)
+
+class TestGauss < Minitest::Test
+  def setup
+    @gauss = Gauss.new
+  end
+
+  def test_that_sum_of_number_is_returned
+    assert_equal 5050, @gauss.add(100)
+    assert_equal 20100, @gauss.add(200)
+    assert_equal 80200, @gauss.add(400)
+  end
+end
+

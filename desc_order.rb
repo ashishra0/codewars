@@ -1,13 +1,28 @@
 # Descending Order
 # problem statement: make a function that can take any non-negative integer as a argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-def descending_order(n)
+require "minitest/autorun"
+
+class Descending
+
+  def descending_order(n)
     num = n.to_s.split('').sort.reverse
     new_number = num.join("").to_i
     return new_number
+  end
+
 end
 
-# Test cases
-descending_order(12345)
-descending_order(13489)
-descending_order(1432791247)
+class TestDescending < Minitest::Test
+
+  def setup
+    @obj = Descending.new
+  end
+
+  def test_that_number_is_highest_possible
+    assert_equal 4332, @obj.descending_order(2343)
+    assert_equal 5544, @obj.descending_order(5454)
+    assert_equal 9876543210, @obj.descending_order(1234567890)
+  end
+
+end
