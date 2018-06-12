@@ -1,5 +1,5 @@
 # Codewars Kata
-
+[![Build Status](https://travis-ci.org/ashishra0/codewars.svg?branch=master)](https://travis-ci.org/ashishra0/codewars)
 ## 7 kyu
 
 * Descending Order
