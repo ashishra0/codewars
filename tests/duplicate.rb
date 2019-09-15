@@ -5,7 +5,7 @@ require "minitest/autorun"
 class Duplicate
   def duplicate_count(text)
     result = text.split("")
-    result.group_by{|elem| elem and elem.upcase}.select{|key,val| val.length > 1}.keys.count
+    result.group_by{ |elem| elem && elem.upcase}.select{|key,val| val.length > 1 }.keys.count
   end
 end
 
