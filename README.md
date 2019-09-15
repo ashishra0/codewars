@@ -17,6 +17,7 @@
 * vowel count
 * Sum of lowest positive integers
 * Filter friends
+* Reverse letter
 
 ## 6 kyu
 
