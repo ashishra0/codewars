@@ -25,4 +25,5 @@
 * Stop gninnipS My sdroW!
 * Who likes it?
 * Vending Machine
+* Autocomplete! Yay!
 > soon more to follow..
