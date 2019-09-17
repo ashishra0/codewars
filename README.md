@@ -26,4 +26,5 @@
 * Who likes it?
 * Vending Machine
 * Autocomplete! Yay!
+* Array Helpers
 > solving new kata..
