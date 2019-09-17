@@ -27,4 +27,5 @@
 * Vending Machine
 * Autocomplete! Yay!
 * Array Helpers
+* Are they the "same"?
 > solving new kata..
