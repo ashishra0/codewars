@@ -4,4 +4,4 @@ rvm:
 os: osx
 
 script:
-- rake test
+- rake
