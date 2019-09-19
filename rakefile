@@ -1,10 +1,6 @@
+require 'rake'
+require 'rspec/core/rake_task'
 
-require "rake/testtask"
+RSpec::Core::RakeTask.new(:spec) 
 
-
-    Rake::TestTask.new do |t|
-      t.libs = ["lib"]
-      t.warning = true
-      t.verbose = true
-      t.test_files = FileList['tests/*.rb']
-    end
+task 'default' => 'spec'
