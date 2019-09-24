@@ -28,4 +28,5 @@
 * Autocomplete! Yay!
 * Array Helpers
 * Are they the "same"?
+* Array.diff
 > solving new kata..
