@@ -30,4 +30,5 @@
 * Are they the "same"?
 * Array.diff
 * Unique Order
+* Duplicate Encoder
 > solving new kata..
