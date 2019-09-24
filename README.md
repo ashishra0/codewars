@@ -29,4 +29,5 @@
 * Array Helpers
 * Are they the "same"?
 * Array.diff
+* Unique Order
 > solving new kata..
