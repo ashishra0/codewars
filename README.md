@@ -32,3 +32,4 @@
 * Unique Order
 * Duplicate Encoder
 * Meeting
+* Lottery Ticket
