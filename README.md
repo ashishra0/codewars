@@ -33,3 +33,4 @@
 * Duplicate Encoder
 * Meeting
 * Lottery Ticket
+* Count characters in your string
