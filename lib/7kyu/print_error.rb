@@ -9,14 +9,5 @@
 
 def printer_error(s)
     count = s.count("nopqrstuvwxyz")
-    error = "#{count}/#{s.length}" 
-    return error
+    "#{count}/#{s.length}"
 end
-
-# test cases
-
-s="aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"
-printer_error(s)
-
-s="aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbzxbbbmmmmmmmmmmmmmpqmmmmmmxyz"
-printer_error(s)
