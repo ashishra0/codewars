@@ -6,12 +6,6 @@
 # [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
 
-def sum_two_smallest_numbers(numbers)
+def sum_two_small_numbers(numbers)
   numbers.sort.first(2).inject(:+)
 end
-
-# test cases
-
-sum_two_smallest_numbers([5, 8, 12, 18, 22])
-sum_two_smallest_numbers([5, 25, 10, 28, 24])
-sum_two_smallest_numbers([35, 18, 1, 8, 2])
