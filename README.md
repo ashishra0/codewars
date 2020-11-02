@@ -22,7 +22,7 @@
 ## 6 kyu
 
 * Counting Duplicates
-* Stop gninnipS My sdroW!
+* Stop gninnipS My sdroW! (Stop Spinning My Words!)
 * Who likes it?
 * Vending Machine
 * Autocomplete! Yay!
