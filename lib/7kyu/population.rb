@@ -22,19 +22,10 @@
 
 def nb_year(p0, percent, aug, p)
     yearsTillGrowth = 0
-        if (p0 >= p)
-            return yearsTillGrowth
-        else
-            until p0 >= p do
-                p0 = p0 + (p0 * percent.fdiv(100)).floor + aug
-                yearsTillGrowth += 1
-            end
+        return yearsTillGrowth if (p0 >= p)
+        until p0 >= p do
+            p0 = p0 + (p0 * percent.fdiv(100)).floor + aug
+            yearsTillGrowth += 1
         end
-    return yearsTillGrowth
+    yearsTillGrowth
 end
-
-# test cases
-nb_year(1000, 2.0, 50, 1214) 
-nb_year(1500, 5, 100, 5000)
-nb_year(1500000, 2.5, 10000, 2000000)
-nb_year(1500000, 0.25, 1000, 2000000)
