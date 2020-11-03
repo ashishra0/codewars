@@ -24,9 +24,3 @@ def likes(names)
   end
 end
 
-# test cases
-
-likes([])
-likes(['Peter'])
-likes(['Peter', 'Sam', 'Andrew'])
-
