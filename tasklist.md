@@ -1,4 +1,4 @@
 ### Pending Tasks
 
- - [ ] Add tests for 6kyu katas
- - [ ] Pending tests for 7kyu katas
+ - [x] Add tests for 6kyu katas
+ - [x] Add tests for 7kyu katas
