@@ -5,10 +5,3 @@ def spin(string)
     spin = string.split(" ").map {|s| s.length >= 5 ? s.reverse : s}
     return spin.join(" ")
 end
-
-# test cases:
-spin("Hey fellow warriors")
-spin("This cannot be solved")
-spin("That is one tough problem")
-spin("easy stuff")
-spin("spin this")
