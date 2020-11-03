@@ -1,5 +1,5 @@
 # Codewars Kata 🤺
-![codewars](https://www.codewars.com/users/ashishra0/badges/small)
+![codewars](https://www.codewars.com/users/ashishra0/badges/medium)
 ## 7 kyu
 
 * Descending Order
@@ -35,3 +35,4 @@
 * Lottery Ticket
 * Count characters in your string
 * Mexican Wave
+* Proof Read
