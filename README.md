@@ -39,3 +39,4 @@
 * Proof Read
 * Sort Arrays
 * Dubstep
+* Highest Rank Number in an Array
