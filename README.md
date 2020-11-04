@@ -1,5 +1,5 @@
 # Codewars Kata 🤺
-![codewars](https://www.codewars.com/users/ashishra0/badges/small)
+![codewars](https://www.codewars.com/users/ashishra0/badges/large)
 ## 7 kyu
 
 * Descending Order
