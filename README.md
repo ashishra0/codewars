@@ -18,6 +18,7 @@
 * Sum of lowest positive integers
 * Filter friends
 * Reverse letter
+* Caeser Cipher
 
 ## 6 kyu
 
