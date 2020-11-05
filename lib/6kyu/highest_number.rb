@@ -7,5 +7,5 @@ def highest_rank(arr)
       result << n
     end
   end
-  result.max.to_s.to_i
+  result.max
 end
