@@ -40,3 +40,4 @@
 * Sort Arrays
 * Dubstep
 * Highest Rank Number in an Array
+* Find odd int
