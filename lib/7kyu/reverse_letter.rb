@@ -3,10 +3,8 @@
 # For str = "ultr53o?n", the output should be "nortlu".
 
 def reverse_letter(string)
-  reverse = Array.new
+  reverse = []
   new_string = string.scan(/[a-z]/)
-  until new_string.empty?
-    reverse << new_string.pop
-  end
-  reverse.join("")
+  reverse << new_string.pop until new_string.empty?
+  reverse.join('')
 end
