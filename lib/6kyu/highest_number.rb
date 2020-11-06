@@ -1,11 +1,9 @@
 def highest_rank(arr)
   temp = []
   result = []
-  arr.each { |n| temp << arr.count(n) }
   arr.each do |n|
-    if arr.count(n) == temp.max
-      result << n
-    end
+    temp << arr.count(n)
+    result << n if arr.count(n) == temp.max
   end
   result.max
 end

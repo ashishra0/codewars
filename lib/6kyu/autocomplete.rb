@@ -3,9 +3,7 @@ def autocomplete(input, dictionary)
   matches = []
   default = dictionary.first(5)
   dictionary.each do |word|
-    if word.downcase.start_with?(input) && !input.empty?
-      matches.push(word)
-    end
+    matches.push(word) if word.downcase.start_with?(input) && !input.empty?
   end
   return default if input.empty?
 

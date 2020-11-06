@@ -1,3 +1,3 @@
 def sortme(arr)
-  arr.sort_by { |word| word.downcase }
+  arr.sort_by(&:downcase)
 end

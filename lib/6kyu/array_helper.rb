@@ -1,10 +1,10 @@
 class Array
   def square
-    map { |i| i * i }
+    map { |i| i**2 }
   end
 
   def cube
-    map { |i| i * i * i }
+    map { |i| i**3 }
   end
 
   def sum
@@ -16,7 +16,7 @@ class Array
   end
 
   def even
-    select { |i|(i % 2).zero? }
+    select { |i| (i % 2).zero? }
   end
 
   def odd

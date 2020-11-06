@@ -1,5 +1,6 @@
 class SmartTrafficLight
   attr_accessor :street1, :street2
+
   def initialize(street1, street2)
     @street1 = street1
     @street2 = street2
