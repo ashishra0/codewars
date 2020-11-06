@@ -1,4 +1,4 @@
-require_relative '../../lib/7kyu/shortest_word.rb'
+require_relative '../../lib/7kyu/shortest_word'
 
 RSpec.describe 'find_short' do
   it 'should return the length of shortest word' do

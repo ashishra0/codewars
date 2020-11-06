@@ -1,7 +1,7 @@
-require_relative '../../lib/6kyu/array_helper.rb'
+require_relative '../../lib/6kyu/array_helper'
 
 RSpec.describe Array do
-  let(:arr) { [1,2,3,4] }
+  let(:arr) { [1, 2, 3, 4] }
 
   context 'valid scenario' do
     it 'should initialize with no arguments' do
@@ -11,7 +11,7 @@ RSpec.describe Array do
 
   context '#square' do
     it 'should square each element' do
-      exp = [1,4,9,16]
+      exp = [1, 4, 9, 16]
       expect(arr.square).to eq(exp)
     end
   end
@@ -37,7 +37,7 @@ RSpec.describe Array do
 
   context '#even' do
     it 'should return even elements' do
-      expect(arr.even).to eq([2,4])
+      expect(arr.even).to eq([2, 4])
     end
   end
 

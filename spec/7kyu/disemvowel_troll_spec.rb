@@ -1,4 +1,4 @@
-require_relative '../../lib/7kyu/disemvowel_troll.rb'
+require_relative '../../lib/7kyu/disemvowel_troll'
 
 RSpec.describe 'Vowel' do
   it 'removes all the vowels' do

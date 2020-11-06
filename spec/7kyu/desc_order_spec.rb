@@ -1,4 +1,4 @@
-require_relative '../../lib/7kyu/desc_order.rb'
+require_relative '../../lib/7kyu/desc_order'
 
 RSpec.describe 'descending' do
   it 'changes the order of digits from ascending to descending' do

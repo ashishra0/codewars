@@ -1,4 +1,4 @@
-require_relative '../../lib/6kyu/array_diff.rb'
+require_relative '../../lib/6kyu/array_diff'
 
 RSpec.describe 'array_diff' do
   it 'removes identical values from two arrays' do

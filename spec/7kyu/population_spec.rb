@@ -1,4 +1,4 @@
-require_relative '../../lib/7kyu/population.rb'
+require_relative '../../lib/7kyu/population'
 
 RSpec.describe 'nb_year' do
   it 'returns the no of years to reach >= 1200 population' do

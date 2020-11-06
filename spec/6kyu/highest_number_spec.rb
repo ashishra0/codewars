@@ -1,7 +1,6 @@
-require_relative '../../lib/6kyu/highest_number.rb'
+require_relative '../../lib/6kyu/highest_number'
 
 RSpec.describe '#highest_rank' do
-
   let(:input1) { [12, 10, 8, 12, 7, 6, 4, 10, 12] }
   let(:input2) { [1, 1, 2, 2, 3] }
 
