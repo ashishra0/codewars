@@ -3,6 +3,6 @@
 
 class Vowel
   def disemvowel(str)
-    str.gsub! /[aAeEiIoOuU]/, ''
+    str.gsub!(/[aAeEiIoOuU]/, '')
   end
 end
