@@ -1,5 +1,3 @@
-require 'pry'
-
 def caeser(message, key)
   plain = ('A'..'Z').to_a
   cipher = plain.rotate(key)
