@@ -19,6 +19,7 @@
 * Filter friends
 * Reverse letter
 * Caeser Cipher
+* Help Suzuki rake his garden!
 
 ## 6 kyu
 
