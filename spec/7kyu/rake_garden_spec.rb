@@ -1,4 +1,4 @@
-require_relative '../../lib/6kyu/rake_garden'
+require_relative '../../lib/7kyu/rake_garden'
 
 RSpec.describe '#rake_garden' do
   let(:input) { 'slug spider rock gravel gravel gravel gravel gravel gravel gravel' }
