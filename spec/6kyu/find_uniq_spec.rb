@@ -1,4 +1,4 @@
-require_relative '../../lib/6kyu/find_odd_int'
+require_relative '../../lib/6kyu/find_uniq_spec'
 
 RSpec.describe '#find_uniq' do
   let(:input1) { [1,1,1,1,0] }
