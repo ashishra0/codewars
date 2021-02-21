@@ -44,3 +44,4 @@
 * Find odd int
 * Smart Traffic Lights
 * Find the unique number
+* IQ test
