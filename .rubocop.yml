@@ -20,6 +20,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - '.git/**/*'
+  NewCops: enable
   # Default formatter will be used if no `-f/--format` option is given.
   DefaultFormatter: progress
   # Cop names are displayed in offense messages by default. Change behavior
@@ -1881,10 +1882,10 @@ Lint/SuppressedException:
   VersionAdded: '0.9'
   VersionChanged: '0.81'
 
-Lint/Syntax:
-  Description: 'Checks syntax error.'
-  Enabled: true
-  VersionAdded: '0.9'
+# Lint/Syntax:
+#   Description: 'Checks syntax error.'
+#   Enabled: true
+#   VersionAdded: '0.9'
 
 
 Lint/ToEnumArguments:
@@ -2039,7 +2040,7 @@ Metrics/BlockLength:
   CountComments: false  # count full line comments?
   Max: 25
   CountAsOne: []
-  ExcludedMethods:
+  IgnoredMethods:
     # By default, exclude the `#refine` method, as it tends to have larger
     # associated blocks.
     - refine
@@ -2084,7 +2085,7 @@ Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 10
   CountAsOne: []
-  ExcludedMethods: []
+  IgnoredMethods: []
 
 Metrics/ModuleLength:
   Description: 'Avoid modules longer than 100 lines of code.'
@@ -3061,9 +3062,8 @@ Style/ExplicitBlockArgument:
                   Consider using explicit block argument to avoid writing block literal
                   that just passes its arguments to another block.
   StyleGuide: '#block-argument'
-  Enabled: true
+  Enabled: false
   # May change the yielding arity.
-  Safe: false
   VersionAdded: '0.89'
 
 Style/ExponentialNotation:
@@ -3295,7 +3295,6 @@ Style/InfiniteLoop:
   Enabled: true
   VersionAdded: '0.26'
   VersionChanged: '0.61'
-  SafeAutoCorrect: true
 
 Style/InlineComment:
   Description: 'Avoid trailing inline comments.'
