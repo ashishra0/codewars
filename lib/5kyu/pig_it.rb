@@ -5,15 +5,13 @@ def pig_it(str)
     str.gsub!(special.to_s, '')
   end
   new_str = []
-  str.split(" ").each do |wor|
-    first = wor.slice!(0) + 'ay'
+  str.split(' ').each do |wor|
+    first = "#{wor.slice!(0)}ay"
     wor += first
     new_str << wor
   end
 
-  if special != ''
-    new_str << special.to_s
-  end
+  new_str << special.to_s if special != ''
 
   new_str.join(' ')
 end
