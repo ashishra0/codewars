@@ -16,6 +16,8 @@ def wave(str)
   res
 end
 
+private
+
 def white?(str)
   str.start_with?(' ') && str.end_with?(' ')
 end
