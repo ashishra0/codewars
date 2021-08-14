@@ -1,14 +1,12 @@
-def sum_pairs(ints, s)
-  return [0, 0] if s.zero?
+def sum_pairs(ints, target)
+  return [0, 0] if target.zero?
 
   set = {}
   ints.collect do |num|
-    sum = s - num
-    if set.key?(sum)
-      return [num, sum].reverse
-    else
-      set[num] = num
-    end
+    sum = target - num
+    return [num, sum].reverse if set.key?(sum)
+
+    set[num] = num
   end
 
   nil

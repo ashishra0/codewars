@@ -13,5 +13,5 @@ def fold_array(array, runs)
 end
 
 def get_half_array(array)
-  array.each_slice( (array.size/2.0).round ).to_a
+  array.each_slice((array.size / 2.0).round).to_a
 end
