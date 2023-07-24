@@ -1,29 +1,29 @@
 def encrypt(text, n)
-  return text if n == 0 or n < 0
-  
+  return text if n.zero? || n.negative?
+
   n.times do
     odd = []
     even = []
     text.chars.each_with_index do |t, i|
       i.odd? ? odd << t : even << t
     end
-    text = ""
+    text = ''
     text = odd.concat(even).join
   end
-  
+
   text
 end
 
 def decrypt(encrypted_text, n)
-  return encrypted_text if n == 0 || n < 0
+  return encrypted_text if n.zero? || n.negative?
 
   len = encrypted_text.length
   half_len = len / 2
 
   n.times do
-    odd_chars = encrypted_text[half_len..-1]
+    odd_chars = encrypted_text[half_len..]
     even_chars = encrypted_text[0...half_len]
-    decrypted_text = ""
+    decrypted_text = ''
 
     (0...half_len).each do |i|
       decrypted_text << odd_chars[i] << even_chars[i]
